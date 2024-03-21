@@ -1,0 +1,404 @@
+{
+  "version": 4,
+  "terraform_version": "0.15.1",
+  "serial": 1,
+  "lineage": "6a593a31-7435-d0a7-ce32-81b9a469a844",
+  "outputs": {},
+  "resources": [
+    {
+      "module": "module.iac_gcp",
+      "mode": "data",
+      "type": "google_compute_network",
+      "name": "private_network",
+      "provider": "module.iac_gcp.provider[\"registry.terraform.io/hashicorp/google-beta\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "description": "Default network for the project",
+            "gateway_ipv4": "",
+            "id": "projects/dyl2-qa/global/networks/default",
+            "name": "default",
+            "project": "dyl2-qa",
+            "self_link": "https://www.googleapis.com/compute/beta/projects/dyl2-qa/global/networks/default",
+            "subnetworks_self_links": [
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/southamerica-east1/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/us-south1/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/europe-west4/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/us-west1/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/us-west4/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/us-west3/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/us-west2/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/asia-southeast2/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/us-central1/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/southamerica-west1/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/northamerica-northeast1/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/us-east4/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/europe-southwest1/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/asia-northeast3/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/asia-southeast1/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/us-east7/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/europe-north1/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/europe-west8/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/asia-south1/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/northamerica-northeast2/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/asia-northeast2/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/australia-southeast1/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/us-east5/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/australia-southeast2/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/europe-west3/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/asia-east2/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/europe-west1/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/europe-west9/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/asia-south2/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/europe-central2/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/europe-west2/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/me-west1/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/europe-west6/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/us-east1/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/asia-northeast1/subnetworks/default",
+              "https://www.googleapis.com/compute/beta/projects/dyl2-qa/regions/asia-east1/subnetworks/default"
+            ]
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
+      "module": "module.iac_gcp",
+      "mode": "data",
+      "type": "google_service_account",
+      "name": "terraform",
+      "provider": "module.iac_gcp.provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "account_id": "dyl2-qa",
+            "display_name": "dyl2-qa",
+            "email": "dyl2-qa@dyl2-qa.iam.gserviceaccount.com",
+            "id": "projects/dyl2-qa/serviceAccounts/dyl2-qa@dyl2-qa.iam.gserviceaccount.com",
+            "name": "projects/dyl2-qa/serviceAccounts/dyl2-qa@dyl2-qa.iam.gserviceaccount.com",
+            "project": "dyl2-qa",
+            "unique_id": "116542134939349331785"
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
+      "module": "module.iac_gcp",
+      "mode": "managed",
+      "type": "google_container_cluster",
+      "name": "primary",
+      "provider": "module.iac_gcp.provider[\"registry.terraform.io/hashicorp/google-beta\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "addons_config": [
+              {
+                "cloudrun_config": [],
+                "config_connector_config": [],
+                "dns_cache_config": [],
+                "gce_persistent_disk_csi_driver_config": [
+                  {
+                    "enabled": true
+                  }
+                ],
+                "gcp_filestore_csi_driver_config": [],
+                "gke_backup_agent_config": [],
+                "horizontal_pod_autoscaling": [],
+                "http_load_balancing": [],
+                "istio_config": [],
+                "kalm_config": [],
+                "network_policy_config": [
+                  {
+                    "disabled": false
+                  }
+                ]
+              }
+            ],
+            "authenticator_groups_config": [],
+            "binary_authorization": [
+              {
+                "enabled": false,
+                "evaluation_mode": ""
+              }
+            ],
+            "cluster_autoscaling": [
+              {
+                "auto_provisioning_defaults": [],
+                "autoscaling_profile": "BALANCED",
+                "enabled": false,
+                "resource_limits": []
+              }
+            ],
+            "cluster_ipv4_cidr": "10.112.0.0/14",
+            "cluster_telemetry": [
+              {
+                "type": "ENABLED"
+              }
+            ],
+            "confidential_nodes": [],
+            "cost_management_config": [],
+            "database_encryption": [
+              {
+                "key_name": "",
+                "state": "DECRYPTED"
+              }
+            ],
+            "datapath_provider": "",
+            "default_max_pods_per_node": 110,
+            "default_snat_status": [
+              {
+                "disabled": false
+              }
+            ],
+            "description": "",
+            "dns_config": [],
+            "enable_autopilot": false,
+            "enable_binary_authorization": false,
+            "enable_intranode_visibility": false,
+            "enable_kubernetes_alpha": false,
+            "enable_l4_ilb_subsetting": false,
+            "enable_legacy_abac": false,
+            "enable_shielded_nodes": true,
+            "enable_tpu": false,
+            "endpoint": "34.134.155.0",
+            "id": "projects/dyl2-qa/locations/us-central1/clusters/dyl2-qa-cluster-001",
+            "identity_service_config": [],
+            "initial_node_count": 1,
+            "ip_allocation_policy": [
+              {
+                "cluster_ipv4_cidr_block": "10.112.0.0/14",
+                "cluster_secondary_range_name": "gke-dyl2-qa-cluster-001-pods-32c3f425",
+                "services_ipv4_cidr_block": "10.116.0.0/20",
+                "services_secondary_range_name": "gke-dyl2-qa-cluster-001-services-32c3f425"
+              }
+            ],
+            "label_fingerprint": "a9dc16a7",
+            "location": "us-central1",
+            "logging_config": [
+              {
+                "enable_components": [
+                  "SYSTEM_COMPONENTS",
+                  "WORKLOADS"
+                ]
+              }
+            ],
+            "logging_service": "logging.googleapis.com/kubernetes",
+            "maintenance_policy": [],
+            "master_auth": [
+              {
+                "client_certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURvVENDQWdtZ0F3SUJBZ0lSQUtkYU9Hb0hvZDdQdmpsYUoydXVqOFl3RFFZSktvWklodmNOQVFFTEJRQXcKTHpFdE1Dc0dBMVVFQXhNa05UazRNR0kzTkRFdE1XRmpZeTAwT0RnMkxUZ3lZbU10TURJMVkyRTVORGt4Wm1FeApNQjRYRFRJeU1Ea3lNREV6TXpVd01sb1hEVEkzTURreE9URXpNemN3TWxvd0VURVBNQTBHQTFVRUF4TUdZMnhwClpXNTBNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQTQ5ZnZrSHE5UTJsRENzUmUKUGtZdStrRXVDaFozaUVnOGVqWWhmNUd5U29ZM1E5UXNORUdPMHkzdmdRaUI1T2pRVUs1SEh0bzRlNlFBcTlQOAo1WkUxdjduMlVDREVydFpydlh0VkZtdkhhVjllcGJmd09GSUxwQ0tLcGhqNmpjeXBNV3JiZWZjaHJ0YitodFJSCnVoQVdKSkRpemQ3T3RYMXUwanZVb0l4em4rcGxoMVR2aUJuR1QxbW53T3hCT0tybU5ZbmJ2Q09SVVhiaHlSZ1IKeEhuK3RWWHhNZEMzMHNrTkZ3azZVUzl1a2hXWWZ4eE1LV0swSWRxek5kUE1HQ1BlbzVMYWp2MXc3NXNIOWpiYworTUhhVHZYNndhZlBrSVpyQTB5dWVhZHJyUFNrT2hIalNaaXdEcndiaXRYWFNnN0kweDdpSU9CcVQzUVhzQ2RhCnBiRC80d0lEQVFBQm8xWXdWREFPQmdOVkhROEJBZjhFQkFNQ0JhQXdFd1lEVlIwbEJBd3dDZ1lJS3dZQkJRVUgKQXdJd0RBWURWUjBUQVFIL0JBSXdBREFmQmdOVkhTTUVHREFXZ0JRR0VwU3dsRXRkdVp0OFVpUithSEZmbFFSdAp2VEFOQmdrcWhraUc5dzBCQVFzRkFBT0NBWUVBVGRJVklQZXhJb1d5K2NTcTJ2ZWV6WThwZUR1NkRaWmZBaTJrCllOWE5iOUVKcEgyNVA3YTAwZHR3dU1GYXFVUGVHZHptUGlPN1dRd01KMWVmb0VPNUVvaUU1bzBUMDFDaEpUMWEKRkoyTlgyVDZNYTJCcUtEZ1ptS2FGVUlHVy9wMVhOQ04zWWhmdVdZNzkrVk9MekkrTWUyQWg2MzJvek9tQ3dncwp1WEpEaTBycy9NTXdsNDh4THhFaTZjdkNQUXU2S1JwcU82bWxaazIxS1VjaWx4YW1PRTFnVWJQL1cwN1ZKZzZDCk8vOXBFcWIvU09CZkQyZ1U2OUpCeU5KRG1pRlZ4RHdkeVVnSFEra2l5WDYxd2ZtS0xhdDZuK0l6aTBrczhvc1kKeDF5Rnk2VEpRY0cvczhtME1jRnNtOTkvSC8wT3I1S3V6UWR0dWpEN0xLdWZYbmJsNXBpb3BsZnUrU2JQTE11WgowaFRkRVFTSCtEVXBkTXUwQzl1eU5vVERPbWRjT3pIQm53RHZxOWNnRmZDV0hPSTlVRktwVS9CcmlrL1RsNDduCngxa2U4TUU2M2FKMG1acXNMZnhNRmVxQUNxaHdjQzM3eWx6b2xYdzJxTWgzQmhSNlBXTldlZ3pTMlAyVVNGdlUKTEppNkRJQXJNa3RUSTkxM0tNWllYSitTZFFrdAotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+                "client_certificate_config": [
+                  {
+                    "issue_client_certificate": true
+                  }
+                ],
+                "client_key": "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb3dJQkFBS0NBUUVBNDlmdmtIcTlRMmxEQ3NSZVBrWXUra0V1Q2haM2lFZzhlalloZjVHeVNvWTNROVFzCk5FR08weTN2Z1FpQjVPalFVSzVISHRvNGU2UUFxOVA4NVpFMXY3bjJVQ0RFcnRacnZYdFZGbXZIYVY5ZXBiZncKT0ZJTHBDS0twaGo2amN5cE1XcmJlZmNocnRiK2h0UlJ1aEFXSkpEaXpkN090WDF1MGp2VW9JeHpuK3BsaDFUdgppQm5HVDFtbndPeEJPS3JtTlluYnZDT1JVWGJoeVJnUnhIbit0Vlh4TWRDMzBza05Gd2s2VVM5dWtoV1lmeHhNCktXSzBJZHF6TmRQTUdDUGVvNUxhanYxdzc1c0g5amJjK01IYVR2WDZ3YWZQa0lackEweXVlYWRyclBTa09oSGoKU1ppd0Ryd2JpdFhYU2c3STB4N2lJT0JxVDNRWHNDZGFwYkQvNHdJREFRQUJBb0lCQUJxeEg3OUtVY1V3U0xWZAozemlSR2t4MlpGYTBNOFFESDcvNjBCNS9kV2FtVUpwMnBITVVGdyt3WmFBMU1lL0hsOWYyZ3NoMDE0SE1sY2pnCjB5akZ3OTZMMTUraTBjZmdhM1lpN21DV1ljeDdhcjE1VGdBYkdkZ0hDcEorTEtRb3QzZ3k3NHdGK0FFMm1LZU0KLzJ5NmJtTDhRa1hNb0xvVy9CWlBBaEF6bVdiQXVMdERpQUNaaHFnUkpubm00eFlCbjVSaUpiVlAxRHZtcjU2cgoyek9RTDFWOXVGdERBSXhobFVwQURMSWhtV2dXUnh3ZzRxVVVJeGVLb2M2SG1OSFk4ck1wM295VitRKzlhSlk0CmlFL0g5R2xpK29uc0NPNzlwOU9DeWpna1RvanlPMHVsRmowWHFFVjVkako2dGpES1ZBempOY1MxS2xlOE80R28Kc0R4d2Rxa0NnWUVBK0l6cHF0N29nUHo5dXFYSkZURFRsSUZiNUFZbGt6S1Z5MS9kc3lTL3VWRXFXMEoyWFBUegp4MWxUVE9HbzE5QzVtbzZvR0QxNDFIcm14MFJnazVxZ3pMMERqMVpSTkoraFMwUlZkRTc5Q1pBTklUOHB0VEE2CmpXM0lOd3pLZGIyWDFwMlpvSnBGL1NXYVFhL2VwZGpXUnNjVUlWQk1uc28rRVZqczY3V0hkQlVDZ1lFQTZxd2sKWENubklPeVo3VXNQNDRYMHJOcUFGQklsalp0R2Q3ZXo0S0NTRC9FQUNIaHFmUWZpekhGdWhNbG1GVk9SNFNsVApzSHVaQ3h3Q09icGk5YXFSRnRxZGF6ZEc5Z1haTkloUngrR3krem1ja3NxanpBMHZUck9taDhFMFhWdWx5NGx6CmhMdDJxaEg4bzdmNEYrSnFaU2M5Mk1xY2JlVXRNL0oxTXZ0NXloY0NnWUVBcVozZ1NJOWVNOGh5anRGY2JHMnAKdGdxaFh2Y2k1VlQ4REpJYmhZbHFuVmphZ3ZUVU9aT2dXVWFJSmt0SkloNTZ5eExYZTlOWGhnbHBQRXRaYk9GMQpJc05LanFMbFAvZy81bEYzejZ1bjJzTEhjd3pidFo1NEZ0UDRjamowWVcxRkZWenYzajNwelZ1LzdWdkxvWHBjCm9HaHpRRmpBTVF6clZvTk5DMzRTTmhFQ2dZQWJuenVBWmFaQTU5aU9aOEZ0QkgxeVF4M0VQd2FRam5CUzh4cUgKSEI5VkpRYmQrRjZBYlFjekRUNzIva1czeU9obzJsWnhkWHJrSmQzVk1hMG9RWFZtZlVEK043bHdoK3V6RlVDYgpDR1BxMGpNdHpCQlBtbFd4SzlBME5uZVZiWTRzVVBkNTdoN2ZrZEpzNnVDVzN4MnEzbDJYUVBIOHRYY0dvRWxQClFPNXE3UUtCZ0RGYno4Ry8xUHI3QnBSVUVyaUZBQWE2OTJsSjhiYnV3dlJSRXdGb0ZyUkFyOTE1ZGp4Y3UzQ3UKUmhuenJlM0tBSUsrRzJQSjVVNXQ0TlVyTjRsOTBtTU1YMk1adlIvTE91V2NPaWpNQk5UbndkeXZhb1NtaHlJQwpxZFdLaFJRQ2xlbGJhQmpUSXNrRHEwRno4L0ZiVWgyK1AxaEpseVhMdi9WQmhBZFFTaWYzCi0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==",
+                "cluster_ca_certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUVMRENDQXBTZ0F3SUJBZ0lRVHYyUFBFK2FmTVZCbEdGOWM5QkJiREFOQmdrcWhraUc5dzBCQVFzRkFEQXYKTVMwd0t3WURWUVFERXlRMU9UZ3dZamMwTVMweFlXTmpMVFE0T0RZdE9ESmlZeTB3TWpWallUazBPVEZtWVRFdwpJQmNOTWpJd09USXdNVEl6TnpBeVdoZ1BNakExTWpBNU1USXhNek0zTURKYU1DOHhMVEFyQmdOVkJBTVRKRFU1Ck9EQmlOelF4TFRGaFkyTXRORGc0TmkwNE1tSmpMVEF5TldOaE9UUTVNV1poTVRDQ0FhSXdEUVlKS29aSWh2Y04KQVFFQkJRQURnZ0dQQURDQ0FZb0NnZ0dCQUwvUm44OEFXR0JkRVBUSmRKQTFzNjUwYmxFR01lN3U3RUpsNHMregpZMnpCZXNZQ28xNVRsZ3k1VWl1SWNPc0Rwc0tNampGUXNnR1pPMytBZy9XYjl4SktwaExFTkVVTXVFQTM3UnV2CjRsVU5KalgwVzE0TmFJTUxuMWxPQS9hN1R0aVd1ZHI4TWM0VU0wQkd6cmFUd0djbE14QUxQRTVqV3diL2d0UzEKMk1sRXJXOCtlZk5SMEVwcGhVRFRvTFpCODNYNVFrdC9sak9aSnF4b1k4eDNMeFhUemdPbGFqYlhCazdtejIwdwpDZTlPZW1MWjRBdU1MVkRBSyt3VGUrdHVCTVlQd0dvVG1pWUUxSHJrYUdIZFV3ZjJPTzYwd3IxQTQ2N2dBVktZCnY2eXBLaGNoRkpRdGRYek9WTDVFUVdtMlIvS003WTNSdUNDVnI4VDkremlJQjVueGVRWW9aSW1vaGVLWWk4R0cKWG9hNTBoRGNRVDE1WGU3dkhuVlRBNjJialV6Q1lRWDRuL2h4b0NJYmVEYyt5cXVTV0RheGlIRWhhR25VSUhTcgpLenh3N3pjN29ocUJwTFpRUDNlT1JxdDRPR2s2WThEVER1MG15TC9iOUIxMmM2UjlFaDZyZnRvWkdtbnJiSmVzCloyWW8rODZCOWxGWFNRSE1QRjNEWnROeHl3SURBUUFCbzBJd1FEQU9CZ05WSFE4QkFmOEVCQU1DQWdRd0R3WUQKVlIwVEFRSC9CQVV3QXdFQi96QWRCZ05WSFE0RUZnUVVCaEtVc0pSTFhibWJmRklrZm1oeFg1VUViYjB3RFFZSgpLb1pJaHZjTkFRRUxCUUFEZ2dHQkFCcENBdGNOazFaQVNxL29kZTNnRng4SzdhZ2RoQ2JQZzRCejNBYUhVNEp5Cm9kOGxYSkgwNVFxK2drb3ZMaDBWZ2JLdGY5b011MVlaN3FidHRubjJURWljYnZKMmxUUUt3TkhtUEloZzVQbVQKOXM4MTJKM1NyVHhVNThxaExwVTZhTDJpNWZzenhQSGVGZnl5bkdnTXpEQVVGRGQyNk96eHIzYVJhZmI2OW10SQp2YTFDS0ZwbFNURHpWMFZKeVNBNmY3elZYc0ZmK2lpRXU0aU02dVZHYWtWV29uZ3VmcTZaM1QvK1BWTUJERVZECnR0K3F3OFB0T3ZyNS9veFBpdThSMExlRDZUMVZIbHRuOEFQRFBrMUdOZ3huSDdCTkVwMWF1em51SFRNZXdSVDMKQVM0N0c2cVBVQ2M1SC82alJUNnAyM01JUFh5MVl1S2NuYXNjbzlJNXQ0eHg2cTRJeDF2Q1RsL0UvYjd5dHY0cAo5TVZYalExL0I5UGlFc2lESmpOK1pPNTlvb3loVWgycjNvM3RFekJEaXZqcWlheE1YZndEallhYzhhUng0cG1sCjh6QVRFNXNuM1BIZDZBV3p1YVBDbG9qN20wSVkrTEc5d282MlJ0a3d4b3lLWjdQNUR4MzJQQkhZZTdCSkxXazQKSkcyM1B6MXFVRjlKM2RqT1JxT2JIQT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K"
+              }
+            ],
+            "master_authorized_networks_config": [],
+            "master_version": "1.22.10-gke.600",
+            "mesh_certificates": [],
+            "min_master_version": "1.22.10-gke.600",
+            "monitoring_config": [
+              {
+                "enable_components": [
+                  "SYSTEM_COMPONENTS"
+                ],
+                "managed_prometheus": []
+              }
+            ],
+            "monitoring_service": "monitoring.googleapis.com/kubernetes",
+            "name": "dyl2-qa-cluster-001",
+            "network": "projects/dyl2-qa/global/networks/default",
+            "network_policy": [
+              {
+                "enabled": true,
+                "provider": "CALICO"
+              }
+            ],
+            "networking_mode": "VPC_NATIVE",
+            "node_config": [],
+            "node_locations": [
+              "us-central1-a",
+              "us-central1-b",
+              "us-central1-f"
+            ],
+            "node_pool": [],
+            "node_pool_auto_config": [
+              {
+                "network_tags": null
+              }
+            ],
+            "node_pool_defaults": [
+              {
+                "node_config_defaults": null
+              }
+            ],
+            "node_version": "1.22.10-gke.600",
+            "notification_config": [
+              {
+                "pubsub": [
+                  {
+                    "enabled": false,
+                    "topic": ""
+                  }
+                ]
+              }
+            ],
+            "operation": null,
+            "pod_security_policy_config": [
+              {
+                "enabled": false
+              }
+            ],
+            "private_cluster_config": [],
+            "private_ipv6_google_access": "",
+            "project": "dyl2-qa",
+            "release_channel": [
+              {
+                "channel": "UNSPECIFIED"
+              }
+            ],
+            "remove_default_node_pool": true,
+            "resource_labels": null,
+            "resource_usage_export_config": [],
+            "self_link": "https://container.googleapis.com/v1beta1/projects/dyl2-qa/locations/us-central1/clusters/dyl2-qa-cluster-001",
+            "service_external_ips_config": [
+              {
+                "enabled": false
+              }
+            ],
+            "services_ipv4_cidr": "10.116.0.0/20",
+            "subnetwork": "projects/dyl2-qa/regions/us-central1/subnetworks/default",
+            "timeouts": null,
+            "tpu_config": null,
+            "tpu_ipv4_cidr_block": "",
+            "vertical_pod_autoscaling": [],
+            "workload_identity_config": []
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoyNDAwMDAwMDAwMDAwLCJkZWxldGUiOjI0MDAwMDAwMDAwMDAsInJlYWQiOjI0MDAwMDAwMDAwMDAsInVwZGF0ZSI6MzYwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
+          "dependencies": [
+            "module.iac_gcp.data.google_compute_network.private_network"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.iac_gcp",
+      "mode": "managed",
+      "type": "google_container_node_pool",
+      "name": "primary_nodes",
+      "provider": "module.iac_gcp.provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "autoscaling": [
+              {
+                "location_policy": "",
+                "max_node_count": 6,
+                "min_node_count": 1,
+                "total_max_node_count": 0,
+                "total_min_node_count": 0
+              }
+            ],
+            "cluster": "dyl2-qa-cluster-001",
+            "id": "projects/dyl2-qa/locations/us-central1/clusters/dyl2-qa-cluster-001/nodePools/dyl2-qa-cluster-001",
+            "initial_node_count": 1,
+            "instance_group_urls": [
+              "https://www.googleapis.com/compute/v1/projects/dyl2-qa/zones/us-central1-f/instanceGroupManagers/gke-dyl2-qa-cluster--dyl2-qa-cluster--8c4bdd39-grp",
+              "https://www.googleapis.com/compute/v1/projects/dyl2-qa/zones/us-central1-b/instanceGroupManagers/gke-dyl2-qa-cluster--dyl2-qa-cluster--a9ce2fbd-grp",
+              "https://www.googleapis.com/compute/v1/projects/dyl2-qa/zones/us-central1-a/instanceGroupManagers/gke-dyl2-qa-cluster--dyl2-qa-cluster--774a8298-grp"
+            ],
+            "location": "us-central1",
+            "managed_instance_group_urls": [
+              "https://www.googleapis.com/compute/v1/projects/dyl2-qa/zones/us-central1-f/instanceGroups/gke-dyl2-qa-cluster--dyl2-qa-cluster--8c4bdd39-grp",
+              "https://www.googleapis.com/compute/v1/projects/dyl2-qa/zones/us-central1-b/instanceGroups/gke-dyl2-qa-cluster--dyl2-qa-cluster--a9ce2fbd-grp",
+              "https://www.googleapis.com/compute/v1/projects/dyl2-qa/zones/us-central1-a/instanceGroups/gke-dyl2-qa-cluster--dyl2-qa-cluster--774a8298-grp"
+            ],
+            "management": [
+              {
+                "auto_repair": true,
+                "auto_upgrade": true
+              }
+            ],
+            "max_pods_per_node": 110,
+            "name": "dyl2-qa-cluster-001",
+            "name_prefix": "",
+            "node_config": [
+              {
+                "boot_disk_kms_key": "",
+                "disk_size_gb": 100,
+                "disk_type": "pd-standard",
+                "gcfs_config": [],
+                "guest_accelerator": [],
+                "gvnic": [],
+                "image_type": "COS_CONTAINERD",
+                "labels": {},
+                "local_ssd_count": 0,
+                "machine_type": "n1-standard-4",
+                "metadata": {
+                  "disable-legacy-endpoints": "true"
+                },
+                "min_cpu_platform": "",
+                "node_group": "",
+                "oauth_scopes": [
+                  "https://www.googleapis.com/auth/devstorage.read_write",
+                  "https://www.googleapis.com/auth/logging.write",
+                  "https://www.googleapis.com/auth/monitoring"
+                ],
+                "preemptible": false,
+                "reservation_affinity": [],
+                "service_account": "dyl2-qa@dyl2-qa.iam.gserviceaccount.com",
+                "shielded_instance_config": [
+                  {
+                    "enable_integrity_monitoring": true,
+                    "enable_secure_boot": false
+                  }
+                ],
+                "spot": false,
+                "tags": null,
+                "taint": [],
+                "workload_metadata_config": []
+              }
+            ],
+            "node_count": 1,
+            "node_locations": [
+              "us-central1-a",
+              "us-central1-b",
+              "us-central1-f"
+            ],
+            "operation": null,
+            "project": "dyl2-qa",
+            "timeouts": {
+              "create": "30m",
+              "delete": null,
+              "update": "40m"
+            },
+            "upgrade_settings": [
+              {
+                "max_surge": 1,
+                "max_unavailable": 0
+              }
+            ],
+            "version": "1.22.10-gke.600"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInVwZGF0ZSI6MjQwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
+          "dependencies": [
+            "module.iac_gcp.data.google_compute_network.private_network",
+            "module.iac_gcp.data.google_service_account.terraform",
+            "module.iac_gcp.google_container_cluster.primary"
+          ]
+        }
+      ]
+    }
+  ]
+}
