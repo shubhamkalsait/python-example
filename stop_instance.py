@@ -16,3 +16,5 @@ response = client.describe_instances(
         }
     ]
 )
+
+print(response)
