@@ -9,9 +9,9 @@ client = boto3.client('ec2')
 response = client.describe_instances(
     Filters=[
         {
-            'Name': 'regiond',
+            'Name': 'region',
             'Values': [
-                'string',
+                'us-east-1',
             ]
         },
     ]
