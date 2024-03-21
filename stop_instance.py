@@ -11,7 +11,8 @@ response = client.describe_instances(
         {
             'Name': 'region',
             'Values': [
-                'us-east-1',
+                'us-east-1'
             ]
         },
+        
     ]
